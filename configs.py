@@ -1,21 +1,21 @@
-import os
+ import os
 
 class Config(object):
-  API_ID = int(os.environ.get("API_ID", ""))
-  API_HASH = os.environ.get("API_HASH", "")
-  BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-  BOT_USERNAME = os.environ.get("BOT_USERNAME", "")
-  DB_CHANNEL = int(os.environ.get("DB_CHANNEL", ""))
+  API_ID = int(os.environ.get("API_ID", "15191874"))
+  API_HASH = os.environ.get("API_HASH", "3037d39233c6fad9b80d83bb8a339a07")
+  BOT_TOKEN = os.environ.get("BOT_TOKEN", "6808668384:AAGKNPT24tLupcU_rKEys4JK-U3Yi2jLloc")
+  BOT_USERNAME = os.environ.get("BOT_USERNAME", "Haruka_RoBot")
+  DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1002023793554"))
   SHORTLINK_URL = os.environ.get('SHORTLINK_URL', "MoneyKamalo.com")
   SHORTLINK_API = os.environ.get('SHORTLINK_API', "0eefb93e1e3ce9470a7033115ceb1bad13a9d674")
-  BOT_OWNER = int(os.environ.get("BOT_OWNER", ""))
-  DATABASE_URL = os.environ.get("DATABASE_URL", "")
-  UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
-  LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
-  BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
+  BOT_OWNER = int(os.environ.get("BOT_OWNER", "5597521952"))
+  DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://kantibhaipurohit195:nTA6VVaXfCu4h7L9@cluster0.htnhwwt.mongodb.net/?retryWrites=true&w=majority")
+  UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1002029287584")
+  LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001918482012"))
+  BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "1727523344").split())
   FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", True))
   BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", True))
-  BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "").split()))
+  BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "1727523344").split()))
   OTHER_USERS_CAN_SAVE_FILE = bool(os.environ.get("OTHER_USERS_CAN_SAVE_FILE", True))
   ABOUT_BOT_TEXT = f"""
 This is a Permanent FileStore Bot. 
